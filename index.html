@@ -6,7 +6,32 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <p>Verdenskart</p>
-    <iframe src="https://mastermaps.github.io/verdenskart/#/nb/" title="map" width="100%" height="400px" frameborder="0" allowfullscreen="" />
+    <div class="content">
+      <div class="header">
+        <div>
+          <h1>Verdenskart</h1>
+          <p>Et utvalg av kart som viser noe av vår påvirkning på kloden</p>
+        </div>
+        <div class="map-select">
+          <select name="map-select" id="map-select">
+            <option value="">Velg kart</option>
+            <option value="population">Befolkning</option>
+            <option value="global-warming-temperature-change">Global oppvarming: temperatur</option>
+            <option value="global-warming-precipitation">Global oppvarming: nedbør</option>
+            <option value="global-warming-snowfall-change">Global oppvarming: snøfall</option>
+            <option value="global-warming-wind-change">Global oppvarming: vind</option>
+            <option value="elevation">Terreng</option>
+            <option value="landcover">Landskapstyper</option>
+            <option value="protected-areas">Verneområder</option>
+            <option value="biodiversity-intactness">Intakt biologisk mangfold</option>
+            <option value="tree-cover">Verdens skoger</option>
+            <option value="tree-cover-loss">Tap av skog</option>
+            <option value="world-heritage-sites">Verdensarven</option>
+          </select>
+        </div>
+      </div>
+      <iframe id="map" src="https://mastermaps.github.io/verdenskart/#/nb/" title="map" frameborder="0" allowfullscreen=""></iframe>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
