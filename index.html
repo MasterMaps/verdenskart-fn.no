@@ -13,9 +13,10 @@
           <p>Et utvalg av kart som viser noe av vår påvirkning på kloden</p>
         </div>
         <div class="map-select">
+          <label for="map-select">Velg kart:</label>
           <select name="map-select" id="map-select">
-            <option value="">Velg kart</option>
-            <option value="population">Befolkning</option>
+            <option value="population" selected>Befolkning</option>
+            <option value="population-change">Befolkningsvekst</option>
             <option value="black-marble">Natt på jorda</option>
             <option value="global-warming-temperature-change">Global oppvarming: temperatur</option>
             <option value="global-warming-precipitation">Global oppvarming: nedbør</option>
@@ -29,10 +30,11 @@
             <option value="tree-cover">Verdens skoger</option>
             <option value="tree-cover-loss">Tap av skog</option>
             <option value="world-heritage-sites">Verdensarven</option>
+            <option value="">Blankt kart</option>
           </select>
         </div>
       </div>
-      <iframe id="map" src="https://mastermaps.github.io/verdenskart/#/nb/" title="map" frameborder="0" allowfullscreen=""></iframe>
+      <iframe id="map" src="" title="map" frameborder="0" allowfullscreen=""></iframe>
     </div>
     <script src="index.js"></script>
   </body>

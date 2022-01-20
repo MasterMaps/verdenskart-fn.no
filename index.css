@@ -33,6 +33,11 @@ body {
   position: relative;
 }
 
+.map-select label {
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
 .map-select select {
   appearance: none;
   position: relative;
@@ -54,7 +59,7 @@ body {
   font-size: 30px;
   color: #005eb8;
   position: absolute;
-  top: 3px;
+  top: 25px;
   right: 10px;
   pointer-events: none;
 }
