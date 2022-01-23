@@ -31,7 +31,7 @@ body {
   padding-bottom: 50px;
 }
 
-.embed a {
+.embed > a {
   display: block;
   line-height: 30px;
 }
