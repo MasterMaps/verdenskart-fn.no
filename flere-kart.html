@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Verdenskart</title>
+    <link
+      rel="stylesheet"
+      href="https://mastermaps.github.io/verdenskart/static/css/bundle.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="embed">
+        <h1>Flere kart på en side</h1>
+        <div
+          class="verdenskart"
+          data-lang="nb"
+          data-layer="population"
+          data-country="afg"
+        ></div>
+        <div id="code" class="code">
+          &lt;div class="verdenskart" data-lang="nb" data-layer="population"
+          data-country="afg" /&gt;
+        </div>
+        <div
+          class="verdenskart"
+          data-lang="nb"
+          data-layer="landcover"
+          data-country="afg"
+        ></div>
+        <div id="code" class="code">
+          &lt;div class="verdenskart" data-lang="nb" data-layer="landcover"
+          data-country="afg" /&gt;
+        </div>
+      </div>
+    </div>
+    <script src="https://mastermaps.github.io/verdenskart/static/js/bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Verdenskart</title>
+    <link
+      rel="stylesheet"
+      href="https://mastermaps.github.io/verdenskart/static/css/bundle.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mobilkart">
+      <div class="mobilkart-select">
+        <div class="map-select">
+          <select name="map-select" id="map-select">
+            <option value="">Celk kart</option>
+            <option value="population">Befolkning</option>
+            <option value="population-change">Befolkningsvekst</option>
+            <option value="black-marble">Natt på jorda</option>
+            <option value="global-warming-temperature">
+              Global oppvarming: temperatur
+            </option>
+            <option value="global-warming-precipitation">
+              Global oppvarming: nedbør
+            </option>
+            <option value="global-warming-snowfall">
+              Global oppvarming: snøfall
+            </option>
+            <option value="global-warming-wind">Global oppvarming: vind</option>
+            <option value="elevation">Terreng</option>
+            <option value="landcover">Landskapstyper</option>
+            <option value="biomes">Økosystem</option>
+            <option value="protected-areas">Verneområder</option>
+            <option value="biodiversity-intactness">
+              Intakt biologisk mangfold
+            </option>
+            <option value="human-modification">Menneskelig påvirkning</option>
+            <option value="tree-cover">Verdens skoger</option>
+            <option value="tree-cover-loss">Tap av skog</option>
+            <option value="world-heritage-sites" selected>Verdensarven</option>
+          </select>
+        </div>
+      </div>
+      <div class="verdenskart" data-id="mobilkart" data-lang="nb" />
+    </div>
+    <script src="https://mastermaps.github.io/verdenskart/static/js/bundle.min.js"></script>
+    <script src="mobilkart.js"></script>
+  </body>
+</html>

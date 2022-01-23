@@ -1,42 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Verdenskart</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="content">
-      <div class="header">
-        <div>
-          <h1>Verdenskart</h1>
-          <p>Et utvalg av kart som viser noe av vår påvirkning på kloden</p>
-        </div>
-        <div class="map-select">
-          <label for="map-select">Velg kart:</label>
-          <select name="map-select" id="map-select">
-            <option value="population" selected>Befolkning</option>
-            <option value="population-change">Befolkningsvekst</option>
-            <option value="black-marble">Natt på jorda</option>
-            <option value="global-warming-temperature">Global oppvarming: temperatur</option>
-            <option value="global-warming-precipitation">Global oppvarming: nedbør</option>
-            <option value="global-warming-snowfall">Global oppvarming: snøfall</option>
-            <option value="global-warming-wind">Global oppvarming: vind</option>
-            <option value="elevation">Terreng</option>
-            <option value="landcover">Landskapstyper</option>
-            <option value="biomes">Økosystem</option>
-            <option value="protected-areas">Verneområder</option>
-            <option value="biodiversity-intactness">Intakt biologisk mangfold</option>
-            <option value="human-modification">Menneskelig påvirkning</option>
-            <option value="tree-cover">Verdens skoger</option>
-            <option value="tree-cover-loss">Tap av skog</option>
-            <option value="world-heritage-sites">Verdensarven</option>
-            <option value="">Blankt kart</option>
-          </select>
-        </div>
+      <div class="embed">
+        <h1>Verdenskart på fn.no</h1>
+        <a href="hovedkart.html">Hovedkartet uten iframe</a>
+        <a href="hovedkart-iframe.html">Hovedkartet med iframe</a>
+        <a href="embed.html">Embed uten iframe</a>
+        <a href="embed-iframe.html">Embed med iframe</a>
+        <a href="flere-kart.html">Flere kart på en side</a>
+        <a href="mobilkart.html">Kart på mobil</a>
       </div>
-      <iframe id="map" src="" title="map" frameborder="0" allowfullscreen=""></iframe>
     </div>
-    <script src="index.js"></script>
   </body>
 </html>

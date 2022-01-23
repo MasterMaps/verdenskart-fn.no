@@ -1,18 +1,13 @@
 body {
   margin: 0;
-}
-
-.content {
   background-color: #f9f9f8;
-  height: 100vh;
-  overflow: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: "Roboto", sans-serif;
   height: 100px;
   color: #333;
   display: flex;
@@ -27,6 +22,44 @@ body {
 
 .header p {
   margin: 8px 0;
+}
+
+.embed {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+
+.embed a {
+  display: block;
+  line-height: 30px;
+}
+
+.embed .embed-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.embed .verdenskart {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ccc;
+}
+
+.embed iframe {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ccc;
+}
+
+.embed .code {
+  margin: 20px 0 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .map-select {
@@ -70,4 +103,35 @@ iframe {
   height: calc(100vh - 100px);
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
+
+.verdenskart {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 100px);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.mobilkart {
+  width: 100%;
+  height: 100vh;
+}
+
+.mobilkart-select {
+  height: 62px;
+}
+
+.mobilkart-select .map-select {
+  width: 280px;
+  padding: 10px;
+}
+
+.mobilkart-select .map-select:after {
+  top: 13px;
+  right: 20px;
+}
+
+.mobilkart .verdenskart {
+  height: calc(100vh - 62px);
 }
